@@ -3,9 +3,8 @@ import scrabble
 counter = 0
 for word in scrabble.WORDLIST:
     palindrome = True
-    for i in range(len(word)):
-        if(list(word)!= list(reversed(word))):
-            palindrome=False
+    if(list(word)!= list(reversed(word))):
+        palindrome=False
 
     if palindrome:
         counter =  counter+1
